@@ -15,6 +15,7 @@ function populateGraph() {
 
     let nodeArray = [];
 
+    // Creates the vertices
     for(let i = 0; i < 8; i++) {
         nodeArray.push([]);
         for(let j = 0; j < 8; j++) {
@@ -24,6 +25,7 @@ function populateGraph() {
 
     let currNode;
     
+    // Populates each vertices with the correct edges
     for(let i = 0; i < nodeArray.length; i++) {
         for(let j = 0; j < nodeArray[i].length; j++) {
 
@@ -62,7 +64,6 @@ function populateGraph() {
             }
         }
     }
-    // console.log(nodeArray[1][2].edges)
     return nodeArray;
 }
 
